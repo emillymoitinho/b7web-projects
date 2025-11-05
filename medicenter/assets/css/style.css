@@ -19,9 +19,7 @@ header {
     width: 990px;
 }
 
-.logo {
-
-}
+.logo {}
 
 .menu nav ul {
     display: flex;
@@ -35,10 +33,99 @@ header {
     transition: all .3s ease-in-out;
 }
 
-.menu nav ul li:nth-child(1), .menu nav ul li:hover {
+.menu nav ul li:nth-child(1),
+.menu nav ul li:hover {
     color: var(--white) !important;
     padding: 15px;
     background-color: var(--blue-primary);
     text-transform: uppercase;
     color: var(--gray-primary);
+}
+
+#banner {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 670px;
+    text-shadow: 0px 1px 0px #555555;
+    color: var(--white);
+    background: url(../images/img1.jpg);
+    background-position: top;
+    background-size: cover;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.banner_headline {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.banner_options {
+    width: 100%;
+    height: 210px;
+    text-shadow: none;
+    display: flex;
+}
+
+.banner_headline h1 {
+    font-size: 4.4rem;
+    max-width: 350px;
+}
+
+.banner_headline h2 {
+    font-size: 1.31rem;
+    max-width: 350px;
+}
+
+.card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+    padding: 20px;
+}
+
+.card:nth-child(1) {
+    background-color: var(--blue-primary);
+}
+
+.card:nth-child(2) {
+    background-color: var(--blue-secondary);
+}
+
+.card:nth-child(3) {
+    background-color: var(--blue-dark);
+}
+
+.card h3 {
+    font-weight: normal;
+    font-size: 21px;
+}
+
+.card a, .card p {
+    font-size: 13px;
+}
+
+.card a {
+    padding: 5px;
+    border: 1px solid var(--white);
+    font-size: 13px;
+}
+
+.card .hour {
+    width: 100%;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    justify-content: space-between;
+    border-bottom: 1px solid #cccccc26;
 }
