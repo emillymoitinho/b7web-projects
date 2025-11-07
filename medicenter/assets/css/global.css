@@ -7,6 +7,11 @@
     font-family: var(--font);
 }
 
+body,
+html {
+    width: 100%;
+}
+
 a {
     color: inherit;
     cursor: pointer;
@@ -16,6 +21,14 @@ a {
 li {
     cursor: pointer;
     list-style: none;
+}
+
+.container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    width: 990px;
+    gap: 2rem;
 }
 
 .flex-col {

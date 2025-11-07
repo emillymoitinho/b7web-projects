@@ -12,13 +12,6 @@ header {
     justify-content: center;
 }
 
-.container {
-    display: flex;
-    justify-content: space-between;
-    width: 990px;
-    gap: 2rem;
-}
-
 .menu nav ul {
     display: flex;
 }
@@ -324,4 +317,88 @@ footer .card a {
 
 .post span {
     color: var(--white);
+}
+
+.menu_mobile {
+    display: none;
+    width: 40px;
+    height: 40px;
+}
+
+.mm_line {
+    height: 3px;
+    background-color: var(--blue-primary);
+}
+
+
+@media (max-width: 600px) {
+
+    #banner {
+        height: auto;
+        background: url(../images/img1-mobile.jpg);
+        background-repeat: no-repeat;
+    }
+
+    #banner .container {
+        gap: 0;
+    }
+
+    .banner_headline {
+        padding: 2rem 2rem 20px;
+    }
+
+    .banner_headline h1 {
+        font-size: 3.4rem;
+    }
+
+    .banner_headline h2 {
+        font-size: 1rem;
+    }
+
+    .banner_options {
+        height: auto;
+        flex-direction: column;
+    }
+
+    #geral {
+        padding: 2rem;
+    }
+
+    #geral .container {
+        flex-direction: column;
+    }
+
+    .card_blue {
+        width: calc(200px - 2rem);
+    }
+
+    .footer_menu,
+    .footer_area {
+        flex-direction: column;
+    }
+
+    .footer_area {
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    .footer_copy {
+        padding-left: 2rem;
+    }
+
+    header {
+        height: auto;
+        padding: 1.5rem 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none !important;
+    }
+
+    .menu_mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
 }
