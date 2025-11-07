@@ -17,3 +17,15 @@ li {
     cursor: pointer;
     list-style: none;
 }
+
+.flex-col {
+    flex-direction: column;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-end {
+    align-items: flex-end !important;
+}

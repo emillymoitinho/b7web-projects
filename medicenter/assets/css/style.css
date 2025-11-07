@@ -238,10 +238,90 @@ article .news_thumbnail img {
 article .news_title {
     font-size: 23px;
     margin: 25px 0;
+    font-weight: normal;
 }
 
 article .news_resume {
     font-size: 14px;
     line-height: 20px;
     color: var(--gray-secondary);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--graphite);
+}
+
+.footer_menu {
+    width: 100%;
+    display: flex;
+    color: var(--white);
+}
+
+footer .card a {
+    border: none;
+}
+
+.footer_area {
+    display: flex;
+    gap: 1rem;
+    font-size: 14px;
+}
+
+.footer_area_item {
+    flex: 1;
+    color: var(--white);
+}
+
+.footer_copy {
+    font-size: 14px;
+    padding: 1rem 0;
+    color: var(--gray-secondary);
+    border-top: 1px solid var(--gray-secondary);
+}
+
+.text_card_footer {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.text_widget_footer {
+    margin-top: 2rem;
+}
+
+.widget_body_footer {
+    line-height: 20px;
+    color: var(--gray);
+}
+
+.mail {
+    color: var(--white);
+}
+
+.social_medias {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.icon_social_media {
+    color: inherit;
+    background-color: #303030;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.years {
+    color: var(--blue-primary);
+    font-size: 14px;
+}
+
+.post span {
+    color: var(--white);
 }
