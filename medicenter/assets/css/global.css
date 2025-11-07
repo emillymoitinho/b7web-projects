@@ -42,3 +42,7 @@ li {
 .align-end {
     align-items: flex-end !important;
 }
+
+.abre {
+    display: flex;
+}

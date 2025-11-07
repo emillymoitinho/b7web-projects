@@ -80,8 +80,9 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1.25rem;
     padding: 20px;
+    gap: 1rem;
+    justify-content: space-around;
 }
 
 .card:nth-child(1) {
@@ -155,13 +156,14 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 2rem 0;
+    gap: 2rem;
 }
 
 .card_blue {
     height: 150px;
-    width: calc(50% - 15px);
-    min-width: 145px;
+    width: calc(50% - 43px);
+    min-width: 140px;
+    flex: 1;
     background-color: #4fa3fd;
 }
 
@@ -331,7 +333,7 @@ footer .card a {
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 
     #banner {
         height: auto;
@@ -368,10 +370,6 @@ footer .card a {
         flex-direction: column;
     }
 
-    .card_blue {
-        width: calc(200px - 2rem);
-    }
-
     .footer_menu,
     .footer_area {
         flex-direction: column;
@@ -388,12 +386,17 @@ footer .card a {
 
     header {
         height: auto;
-        padding: 1.5rem 2rem;
+        padding: 2rem;
     }
 
-    nav ul {
+    .menu nav ul {
         flex-direction: column;
-        display: none !important;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        padding-top: 2rem;
     }
 
     .menu_mobile {
