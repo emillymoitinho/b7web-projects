@@ -14,12 +14,10 @@ header {
 
 .container {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     width: 990px;
+    gap: 2rem;
 }
-
-.logo {}
 
 .menu nav ul {
     display: flex;
@@ -110,7 +108,8 @@ header {
     font-size: 21px;
 }
 
-.card a, .card p {
+.card a,
+.card p {
     font-size: 13px;
 }
 
@@ -128,4 +127,121 @@ header {
     padding-bottom: 10px;
     justify-content: space-between;
     border-bottom: 1px solid #cccccc26;
+}
+
+#geral {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+#geral section {
+    flex: 2;
+}
+
+#geral aside {
+    flex: 1;
+}
+
+.widget_title {
+    margin: 30px 0 20px 0;
+}
+
+.widget_title_text {
+    font-size: 21px;
+}
+
+.widget_title_bar {
+    width: 50px;
+    height: 2px;
+    margin-top: 10px;
+    background-color: var(--blue-primary);
+}
+
+.widget_body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem 0;
+}
+
+.card_blue {
+    height: 150px;
+    width: calc(50% - 15px);
+    min-width: 145px;
+    background-color: #4fa3fd;
+}
+
+.text_make {
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #cacaca;
+}
+
+.contact {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #cacaca;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: 8px;
+    color: var(--white);
+    background-color: #cacaca;
+}
+
+.contact a {
+    color: blue;
+    text-decoration: underline;
+}
+
+article {
+    flex: 1;
+    min-width: 300px;
+}
+
+article .news_data {
+    display: flex;
+    gap: 2px;
+}
+
+article .news_posted_at {
+    padding: 10px;
+    font-size: 12px;
+    color: var(--white);
+    background-color: var(--blue-dark);
+}
+
+article .news_comments {
+    padding: 10px;
+    font-size: 12px;
+    color: var(--white);
+    background-color: var(--blue-primary);
+}
+
+article .news_thumbnail {
+    margin-top: 30px;
+}
+
+article .news_thumbnail img {
+    width: 100%;
+    height: auto;
+}
+
+article .news_title {
+    font-size: 23px;
+    margin: 25px 0;
+}
+
+article .news_resume {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--gray-secondary);
 }
