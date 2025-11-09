@@ -343,6 +343,7 @@ footer .card a {
         height: auto;
         background: url(../images/img1-mobile.jpg);
         background-repeat: no-repeat;
+        background-position: top;
     }
 
     #banner .container {

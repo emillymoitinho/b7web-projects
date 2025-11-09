@@ -29,4 +29,11 @@ Ele simula um **site institucional de uma clínica médica**, com foco em **desi
 - **HTML5**  
 - **CSS3**  
 - **Font Awesome**  
-- **Responsividade (Media Queries)**  
+- **Responsividade (Media Queries)** 
+
+#### 💻 Versão Desktop
+![Print da versão desktop do site Medicenter](medicenter/assets/images/print-desktop.jpeg)
+
+#### 📱 Versão Mobile
+![Print da versão mobile do site Medicenter](medicenter/assets/images/print-mobile.jpeg)
+
