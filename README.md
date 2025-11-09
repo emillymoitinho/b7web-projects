@@ -35,7 +35,7 @@ Ele simula um **site institucional de uma clínica médica**, com foco em **desi
 ![Print da versão mobile do site Medicenter](medicenter/assets/images/print-mobile.jpeg)
 
 #### 📱 Versão Tablet
-![Print da versão tablet do site Medicenter](medicenter/assets/images/print-tablet.jpeg.jpeg)
+![Print da versão tablet do site Medicenter](medicenter/assets/images/print-tablet.jpeg)
 
 #### 💻 Versão Desktop
 ![Print da versão desktop do site Medicenter](medicenter/assets/images/print-desktop.jpeg)
