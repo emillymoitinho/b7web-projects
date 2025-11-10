@@ -3,7 +3,6 @@
 header {
     position: absolute;
     padding: 2rem 4rem;
-    width: 100%;
 }
 
 .main {
@@ -122,7 +121,7 @@ cite {
 
 .timeline-list .year {
     font-weight: bold;
-    color: #7b5e3b;
+    color: var(--brown);
     font-size: 1.1rem;
     display: inline-block;
     margin-bottom: 5px;
@@ -141,14 +140,14 @@ cite {
 .books {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
     padding-left: 2rem;
 }
 
 .container-books {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    justify-content: space-between;
 }
 
 .book-content {
@@ -157,4 +156,76 @@ cite {
     gap: 1rem;
     text-align: center;
     flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+
+    h2::before {
+        display: none;
+    }
+
+    .main {
+        height: 70vh;
+    }
+
+    .destaque {
+        width: 80%;
+        bottom: 27vh;
+    }
+
+    .container {
+        margin-top: 14vh;
+    }
+
+    cite {
+        font-size: 3vw;
+    }
+
+    .content-about {
+        flex-direction: column;
+    }
+
+    .content-about p {
+        width: 100%;
+    }
+
+    .content-about img {
+        width: 100%;
+    }
+
+    .time-books {
+        flex-direction: column-reverse;
+        gap: 5rem;
+    }
+
+    .timeline {
+        border: 0;
+        padding: 0;
+    }
+
+    .books {
+        padding: 0;
+    }
+
+    .container-books {
+        gap: 1rem;
+    }
+
+    .books .title {
+        width: 18rem;
+    }
+
+    footer {
+        padding: 20px 0;
+        gap: 1rem;
+        flex-direction: column;
+    }
+
+    footer p {
+        width: 13rem;
+    }
+
+    .social-media {
+        gap: 1rem;
+    }
 }
