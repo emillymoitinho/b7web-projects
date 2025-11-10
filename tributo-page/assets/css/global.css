@@ -9,12 +9,16 @@
 body,
 html {
     width: 100%;
+    background-color: var(--bege);
+    font-family: var(--font-lora);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 a {
     color: inherit;
     cursor: pointer;
-    text-decoration: none;
 }
 
 li {
@@ -24,4 +28,65 @@ li {
 
 h1 {
     font-family: var(--font-cormorant-garamond);
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+.container {
+    width: 80%;
+    margin-top: 30vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10rem;
+    margin-bottom: 3rem;
+}
+
+.container article {
+    flex: 1;
+}
+
+.title {
+    width: fit-content;
+    position: relative;
+    color: var(--brown);
+}
+
+.title::before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 2px;
+    right: 0;
+    bottom: -0.5rem;
+    z-index: 999;
+    background-color: #6c4e2f;
+}
+
+footer {
+    width: 100%;
+    padding: 20px 40px;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--brown);
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 24px;
+}
+
+.social-media a {
+    transition: all .3s ease-in-out;
+}
+
+.social-media a:hover {
+    transform: translateY(-5px);
 }
