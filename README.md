@@ -19,7 +19,7 @@ Este repositório foi criado para:
 O **Medicenter** é um dos projetos desenvolvidos durante o curso.  
 Ele simula um **site institucional de uma clínica médica**, com foco em **design responsivo**, **estrutura HTML semântica** e **boas práticas de layout com CSS e Flexbox**.
 
-Link: https://emillymoitinho.github.io/b7web-projects/medicenter/index.html
+Link: https://emillymoitinho.github.io/b7web-projects/medicenter
 
 ### 🧠 Tecnologias utilizadas:
 - **HTML5**  
@@ -27,13 +27,24 @@ Link: https://emillymoitinho.github.io/b7web-projects/medicenter/index.html
 - **Font Awesome**  
 - **Responsividade (Media Queries)** 
 
-#### 📱 Versão Mobile
-![Print da versão mobile do site Medicenter](medicenter/assets/images/print-mobile.jpeg)
-
-#### 📱 Versão Tablet
-![Print da versão tablet do site Medicenter](medicenter/assets/images/print-tablet.jpeg)
-
-#### 💻 Versão Desktop
 ![Print da versão desktop do site Medicenter](medicenter/assets/images/print-desktop.jpeg)
+
+
+## Projeto: Tributo Page
+Este projeto é uma página dedicada ao autor C. S. Lewis, apresentando informações sobre sua vida, carreira, principais obras e uma linha do tempo histórica. A página foi desenvolvida com foco em simplicidade, leitura agradável e visual limpo.
+
+[Acesse o projeto](https://emillymoitinho.github.io/b7web-projects/tributo-page/)
+
+### 🧠 Tecnologias utilizadas:
+- **HTML5**  
+- **CSS3**  
+- **Font Awesome**  
+- **Responsividade (Media Queries)**
+
+![Print da versão desktop do site Tributo Page](tributo-page/assets/images/print-tributo-page.jpeg)
+
+
+
+
 
 
