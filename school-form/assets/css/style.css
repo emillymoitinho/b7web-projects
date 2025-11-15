@@ -1,1 +1,135 @@
 @import url(global.css);
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-10%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    border-radius: 40px;
+    background-color: #fff;
+    border: 2px solid var(--blue);
+}
+
+form {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+form .title-form {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 0;
+}
+
+fieldset h3 {
+    color: var(--blue);
+}
+
+.group-row {
+    display: flex;
+    gap: 2rem;
+}
+
+.name-aluno {
+    flex: 2;
+}
+
+.date {
+    flex: 1;
+}
+
+.group-input {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.group-input input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="tel"]::placeholder {
+    color: #ccc;
+}
+
+.group-input input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"] {
+    flex: 2;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #dfdddd;
+}
+
+.group-input label {
+    text-wrap: nowrap;
+}
+
+.info-matricula {
+    display: flex;
+    gap: 2rem;
+}
+
+.group-col {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+select {
+    border-radius: 5px;
+    border: 1px solid #dfdddd;
+    cursor: pointer;
+    outline: none;
+    padding: 10px;
+}
+
+input[type="radio"] {
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.buttons button {
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 10px 20px;
+    transition: .3s ease-in-out;
+}
+
+.buttons button:hover {
+    transform: scale(1.05);
+}
+
+.btn-send {
+    background-color: var(--green);
+}
+
+.btn-reset {
+    background-color: var(--orange);
+}

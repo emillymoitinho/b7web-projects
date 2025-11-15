@@ -1,11 +1,112 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro - School</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
+    <main>
+        <form>
+            <h1 class="title-form">Formulário de Pré-Matrícula</h1>
+
+            <fieldset>
+                <h3>Dados Pessoais</h3>
+                <div class="group-row">
+                    <div class="group-input name-aluno">
+                        <label for="name">Nome do Aluno(a) </label>
+                        <input type="text" name="name" id="name" placeholder="Digite o nome do aluno(a)">
+                    </div>
+                    <div class="group-input date">
+                        <label for="nasc">Data de Nascimento</label>
+                        <input type="date" name="nasc" id="nasc">
+                    </div>
+                </div>
+                <div class="group-input">
+                    <label for="name-mae">Nome da Mãe</label>
+                    <input type="text" name="name-mae" id="name-mae" placeholder="Digite o nome da mãe do aluno(a)">
+                </div>
+                <div class="group-input">
+                    <label for="name-pai">Nome do Pai</label>
+                    <input type="text" name="name-pai" id="name-pai" placeholder="Digite o nome do pai do aluno(a)">
+                </div>
+                <div class="group-row">
+                    <div class="group-input">
+                        <label for="tel">Telefone (Celular)</label>
+                        <input type="tel" name="tel" id="tel" placeholder="(xx) xxxxx-xxxx">
+                    </div>
+                    <div class="group-input">
+                        <label for="mail">Email</label>
+                        <input type="email" name="mail" id="mail" placeholder="example@mail.com">
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <h3>Informações de Matrícula</h3>
+
+                <div class="info-matricula">
+
+                    <div class="group-col">
+                        <h4>Série</h3>
+                        <div class="group-input">
+                            <select name="serie" id="serie">
+                                <option value="pre-escola">Pré-Escolar</option>
+                                <option value="fundamental-I">Fundamental I (1º Ano ao 5º Ano)</option>
+                                <option value="fundamental-I">Fundamental II (6º Ano ao 9º Ano)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="group-col">
+                        <h4>Turno</h3>
+                        <div class="group-input">
+                            <label for="turnoManha">
+                                <input type="radio" name="turno" id="turnoManha" value="manha">
+                                Manhã
+                            </label>
+                            <label for="turnoTarde">
+                                <input type="radio" name="turno" id="turnoTarde" value="tarde">
+                                Tarde
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="group-col">
+                        <h4>Atividades Extracurriculares:</h3>
+                        <div class="group-input">
+                            <input type="checkbox" name="informatica" id="informatica">
+                            <label for="informatica">Informátia</label>
+                        </div>
+                        <div class="group-input">
+                            <input type="checkbox" name="natacao" id="natacao">
+                            <label for="natacao">Natação</label>
+                        </div>
+                        <div class="group-input">
+                            <input type="checkbox" name="balet" id="balet">
+                            <label for="balet">Balet</label>
+                        </div>
+                        <div class="group-input">
+                            <input type="checkbox" name="futebol" id="futebol">
+                            <label for="futebol">Futebol</label>
+                        </div>
+                        <div class="group-input">
+                            <input type="checkbox" name="music" id="music">
+                            <label for="music">Música</label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="buttons">
+                <button type="submit" class="btn-send">Enviar</button>
+                <button type="reset" class="btn-reset">Limpar Campos</button>
+            </div>
+        </form>
+    </main>
 </body>
+
 </html>
