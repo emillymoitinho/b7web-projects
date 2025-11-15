@@ -9,7 +9,6 @@
 body,
 html {
     width: 100%;
-    background-color: var(--bege);
     font-family: var(--font-lora);
     display: flex;
     flex-direction: column;
@@ -19,10 +18,10 @@ html {
 a {
     color: inherit;
     cursor: pointer;
+    text-decoration: none;
 }
 
 li {
-    cursor: pointer;
     list-style: none;
 }
 
@@ -35,13 +34,13 @@ h2 {
 }
 
 .container {
-    width: 80%;
-    margin-top: 30vh;
+    width: 100%;
+    padding: 5vw;
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 5rem;
-    margin-bottom: 3rem;
+    gap: 10rem;
+    background-color: var(--bege);
 }
 
 .container article {
@@ -68,7 +67,6 @@ h2 {
 footer {
     width: 100%;
     padding: 20px 40px;
-    text-align: center;
     color: #fff;
     display: flex;
     align-items: center;
