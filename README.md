@@ -19,7 +19,7 @@ Este repositório foi criado para:
 O **Medicenter** é um dos projetos desenvolvidos durante o curso.  
 Ele simula um **site institucional de uma clínica médica**, com foco em **design responsivo**, **estrutura HTML semântica** e **boas práticas de layout com CSS e Flexbox**.
 
-Link: https://emillymoitinho.github.io/b7web-projects/medicenter
+[Acesse o projeto](https://emillymoitinho.github.io/b7web-projects/medicenter)
 
 ### 🧠 Tecnologias utilizadas:
 - **HTML5**  
