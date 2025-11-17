@@ -1,1 +1,139 @@
 @import url(global.css);
+
+.main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--beige);
+    gap: 5rem;
+}
+
+.main header {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+}
+
+.btn-menu {
+    display: none;
+}
+
+.main header nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+.main header nav ul li,
+.main header nav ul li a {
+    transition: .3s ease-in-out;
+}
+
+.main header nav ul li a {
+    font-size: 14px;
+    color: var(--text);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 0 10px 5px;
+    border: 2px solid transparent;
+}
+
+.main header nav ul li:hover {
+    transform: translateY(-5px);
+}
+
+.main header nav ul li a:hover {
+    border-bottom: 2px solid var(--brown);
+}
+
+.main-content {
+    position: relative;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 50vh;
+}
+
+.main-content .title {
+    font-size: 3rem;
+    width: 35rem;
+    color: var(--text);
+    text-transform: uppercase;
+}
+
+.main-content-text {
+    margin-top: 2rem;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.main-content p {
+    width: 500px;
+    letter-spacing: 1px;
+    line-height: 1.7rem;
+}
+
+.btn-more {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 15px 20px;
+    color: var(--off-white);
+    text-transform: uppercase;
+    margin-top: 1rem;
+    font-weight: bold;
+    background-color: var(--rose-gold);
+}
+
+.happy-woman {
+    position: absolute;
+    right: -10%;
+    bottom: 0;
+    width: 60%;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .main {
+        gap: 0;
+    }
+
+    .main header {
+        padding: 2rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .btn-menu {
+        display: flex;
+        color: var(--brown);
+        font-size: 1.5rem;
+    }
+
+    .main-content {
+        height: auto;
+        padding-bottom: 3rem;
+    }
+
+    .main-content p,
+    .main-content .title {
+        width: auto;
+    }
+
+    .main-content .title {
+        font-size: 1.5rem;
+    }
+
+    .main-content img {
+        display: none;
+    }
+}
