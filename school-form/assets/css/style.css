@@ -1,7 +1,7 @@
 @import url(global.css);
 
 main {
-    min-width: 40vw;
+    width: 40rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -61,13 +61,13 @@ fieldset h3 {
 
 .group-input input[type="text"]::placeholder,
 input[type="email"]::placeholder,
-input[type="tel"]::placeholder {
+input[type="number"]::placeholder {
     color: #ccc;
 }
 
 .group-input input[type="text"],
 input[type="email"],
-input[type="tel"],
+input[type="number"],
 input[type="date"] {
     flex: 2;
     border-radius: 5px;
@@ -133,4 +133,27 @@ input[type="checkbox"] {
     transform: scale(1.1);
     background-color: var(--orange);
     box-shadow: 6px 6px 17px -9px var(--orange);
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+        background: var(--orange);
+    }
+
+    main {
+        min-width: 100%;
+        padding: 40px 20px;
+        border: none;
+    }
+
+    .group-row {
+        flex-direction: column;
+    }
+
+    form .title-form {
+        font-size: 1.75rem;
+        width: 180px;
+        align-self: center;
+    }
 }
