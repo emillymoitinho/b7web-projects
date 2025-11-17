@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro - School</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -29,10 +34,6 @@
                     <label for="name-mae">Nome da Mãe</label>
                     <input type="text" name="name-mae" id="name-mae" placeholder="Digite o nome da mãe do aluno(a)">
                 </div>
-                <div class="group-input">
-                    <label for="name-pai">Nome do Pai</label>
-                    <input type="text" name="name-pai" id="name-pai" placeholder="Digite o nome do pai do aluno(a)">
-                </div>
                 <div class="group-row">
                     <div class="group-input">
                         <label for="tel">Telefone (Celular)</label>
@@ -47,11 +48,10 @@
 
             <fieldset>
                 <h3>Informações de Matrícula</h3>
-
                 <div class="info-matricula">
 
                     <div class="group-col">
-                        <h4>Série</h3>
+                        <h4>Série</h4>
                         <div class="group-input">
                             <select name="serie" id="serie">
                                 <option value="pre-escola">Pré-Escolar</option>
@@ -62,7 +62,7 @@
                     </div>
 
                     <div class="group-col">
-                        <h4>Turno</h3>
+                        <h4>Turno</h4>
                         <div class="group-input">
                             <label for="turnoManha">
                                 <input type="radio" name="turno" id="turnoManha" value="manha">
@@ -74,37 +74,10 @@
                             </label>
                         </div>
                     </div>
-
-                    <div class="group-col">
-                        <h4>Atividades Extracurriculares:</h3>
-                        <div class="group-input">
-                            <input type="checkbox" name="informatica" id="informatica">
-                            <label for="informatica">Informátia</label>
-                        </div>
-                        <div class="group-input">
-                            <input type="checkbox" name="natacao" id="natacao">
-                            <label for="natacao">Natação</label>
-                        </div>
-                        <div class="group-input">
-                            <input type="checkbox" name="balet" id="balet">
-                            <label for="balet">Balet</label>
-                        </div>
-                        <div class="group-input">
-                            <input type="checkbox" name="futebol" id="futebol">
-                            <label for="futebol">Futebol</label>
-                        </div>
-                        <div class="group-input">
-                            <input type="checkbox" name="music" id="music">
-                            <label for="music">Música</label>
-                        </div>
-                    </div>
                 </div>
             </fieldset>
 
-            <div class="buttons">
-                <button type="submit" class="btn-send">Enviar</button>
-                <button type="reset" class="btn-reset">Limpar Campos</button>
-            </div>
+            <button type="submit" class="btn-send">Enviar</button>
         </form>
     </main>
 </body>

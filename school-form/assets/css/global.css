@@ -4,22 +4,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Nunito", sans-serif;
 }
 
 button {
     border: 0;
     cursor: pointer;
-    background-color: none;
+    background-color: transparent;
 }
 
 a {
     text-decoration: none;
-}
-
-html,
-body {
-    height: 100%;
 }
 
 body {
@@ -28,21 +23,10 @@ body {
     background-position: top;
     background-repeat: no-repeat;
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 input {
     outline: none;
-}
-
-.glass {
-    background: rgba(255, 255, 255, 0.15);
-    /* transparência */
-    backdrop-filter: blur(10px);
-    /* efeito vidro */
-    -webkit-backdrop-filter: blur(10px);
-    /* para Safari */
-    /* borda suave */
-    border-radius: 12px;
-    /* arredondamento */
-    padding: 20px;
 }
