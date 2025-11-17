@@ -43,6 +43,19 @@ Este projeto é uma página dedicada ao autor C. S. Lewis, apresentando informa�
 
 ![Print da versão desktop do site Tributo Page](tributo-page/assets/images/print-tributo-page.jpeg)
 
+## Projeto: School Form
+
+Este projeto consiste na criação de um formulário de pré-matrícula escolar, desenvolvido com HTML e CSS.
+
+![Print da versão desktop do site School Form](school-form/assets/images/form-print.jpeg)
+
+### 🧠 Tecnologias utilizadas:
+- **HTML5**  
+- **CSS3**  
+- **Responsividade (Media Queries)**
+
+
+
 
 
 
