@@ -1,7 +1,7 @@
 @import url(global.css);
 
 main {
-    min-width: 40rem;
+    min-width: 40vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,8 +10,6 @@ main {
     border-radius: 20px;
     background: var(--white);
     border: 3px solid var(--orange);
-    margin: 5rem;
-
 }
 
 form {
@@ -78,6 +76,13 @@ input[type="date"] {
     background-color: var(--white);
 }
 
+.group-input input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus {
+    border: 1px solid var(--orange);
+}
+
 .group-input label {
     text-wrap: nowrap;
 }
@@ -112,7 +117,7 @@ input[type="checkbox"] {
     cursor: pointer;
 }
 
-.btn-send {
+.btn-next {
     align-self: flex-end;
     border-radius: 10px;
     font-size: 18px;
@@ -123,7 +128,7 @@ input[type="checkbox"] {
     border: 2px solid var(--orange);
 }
 
-.btn-send:hover {
+.btn-next:hover {
     color: var(--white);
     transform: scale(1.1);
     background-color: var(--orange);
