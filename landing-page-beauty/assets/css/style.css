@@ -49,10 +49,8 @@
 }
 
 .main-content {
-    position: relative;
     align-items: flex-start;
     justify-content: space-between;
-    height: 50vh;
 }
 
 .main-content .title {
@@ -89,11 +87,64 @@
 }
 
 .happy-woman {
-    position: absolute;
-    right: -10%;
-    bottom: 0;
-    width: 60%;
+    width: 35vw;
 }
+
+.about {
+    width: 100%;
+    margin: 5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-img {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.about-img .woman-applying {
+    width: 70%;
+    max-width: 400px;
+    min-width: 250px;
+    border-radius: 50%;
+}
+
+.about-img .product-img {
+    position: absolute;
+    bottom: 0;
+    left: 4rem;
+    width: 6vw;
+    height: 6vw;
+    min-width: 100px;
+    min-height: 100px;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 3px solid white;
+    box-shadow: -3px 5px 21px -2px var(--light-brown);
+}
+
+.content-about {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-about-title {
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.content-about p {
+    line-height: 25px;
+    width: 35vw;
+}
+
+.content-about .msg {
+    margin-top: 1rem;
+}
+
 
 @media (max-width: 768px) {
     .container {
@@ -135,5 +186,58 @@
 
     .main-content img {
         display: none;
+    }
+
+    .about {
+        gap: 0;
+        flex-direction: column-reverse;
+    }
+
+    .about-img {
+        flex: auto;
+        margin-top: 2rem;
+    }
+
+    .about-img .product-img {
+        bottom: -1rem;
+        left: 1rem;
+    }
+
+    .content-about p {
+        width: auto;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .main {
+        gap: 2rem;
+    }
+
+    .main-content {
+        margin-bottom: 5rem;
+        height: auto;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .btn-menu {
+        display: flex;
+        color: var(--brown);
+        font-size: 1.5rem;
+    }
+
+    .happy-woman {
+        display: none;
+    }
+
+    .content-about p {
+        width: auto;
+    }
+
+    .about-img .product-img {
+        left: -1rem;
     }
 }

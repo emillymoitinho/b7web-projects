@@ -7,6 +7,13 @@
     font-family: "Montserrat", sans-serif;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    color: var(--text);
+    background-color: var(--off-white);
+}
+
 a {
     text-decoration: none;
 }
@@ -16,8 +23,11 @@ li {
 }
 
 .container {
-    width: 70vw;
+    width: 80vw;
+    max-width: 1400px;
     display: flex;
+    align-self: center;
+    justify-content: center;
 }
 
 button {
@@ -45,4 +55,9 @@ button {
 
 .list-mobile {
     flex-direction: column;
+
+}
+
+.emy-beuaty {
+    color: var(--rose-gold);
 }
