@@ -14,6 +14,11 @@ body {
     background-color: var(--off-white);
 }
 
+h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
 a {
     text-decoration: none;
 }
@@ -60,4 +65,16 @@ button {
 
 .emy-beuaty {
     color: var(--rose-gold);
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.gap-2 {
+    gap: 2rem;
 }
