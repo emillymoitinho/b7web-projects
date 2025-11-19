@@ -91,7 +91,6 @@
 }
 
 .about {
-    width: 100%;
     margin: 5rem 0 10rem;
     display: flex;
     align-items: center;
@@ -247,6 +246,68 @@
     background-color: var(--rose-gold);
 }
 
+.treatments {
+    width: 100%;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-tratamentos {
+    margin-bottom: 10rem;
+}
+
+.container-cards-tratamentos {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    align-items: center;
+}
+
+.card-tratamento {
+    max-width: 65rem;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: var(--light-rose);
+}
+
+.card-tratamento img {
+    width: 50%;
+    position: absolute;
+    top: -10vh;
+    left: -4vw;
+
+}
+
+.card-tratamento h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.content-card-tratamento {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.content-card-tratamento .text-card-tratamentos {
+    line-height: 1.5rem;
+}
+
+.btn-mais {
+    width: 150px;
+    font-size: 16px;
+    border-radius: 60px;
+    padding: 15px 20px;
+    color: var(--light-rose);
+    background-color: var(--brown);
+}
+
 
 @media (max-width: 768px) {
 
@@ -335,12 +396,48 @@
 
     }
 
-    .best-sellers {
+    .best-sellers,
+    .treatments {
         padding: 2rem;
     }
 
-    .best-sellers .container {
+    .best-sellers .container,
+    .treatments .container {
         padding: 0;
+    }
+
+    .title-tratamentos {
+        margin: 2rem 0 3rem;
+    }
+
+    .container-cards-tratamentos {
+        width: 100%;
+        gap: 3rem;
+    }
+
+    .container-cards-tratamentos .card-tratamento {
+        width: 100%;
+        max-width: 500px;
+        padding: 15px;
+    }
+
+    .card-tratamento:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+
+    .card-tratamento img {
+        position: static;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .card-tratamento h3 {
+        font-size: 1.25rem;
+        width: 100%;
+    }
+
+    .content-card-tratamento {
+        width: 100%;
     }
 }
 
@@ -380,4 +477,36 @@
     .best-sellers .card-product {
         max-width: 300px;
     }
+
+    .title-tratamentos {
+        margin: 2rem 0 5rem;
+    }
+
+    .card-tratamento {
+        width: 85%;
+    }
+
+    .card-tratamento:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+
+    .card-tratamento img {
+        position: static;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .content-card-tratamento {
+        width: auto;
+    }
+
+    .content-card-tratamento .text-card-tratamentos {
+        font-size: 20px;
+        line-height: 2rem;
+    }
+
+    .container-cards-tratamentos {
+        gap: 5rem;
+    }
+
 }
