@@ -20,10 +20,11 @@
             <nav id="menu">
                 <ul id="list-mobile">
                     <li><a href="#">Início</a></li>
-                    <li><a href="#">Sobre Nós</a></li>
-                    <li><a href="#">Produtos</a></li>
-                    <li><a href="#">Tratamentos</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#about">Sobre Nós</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#products">Produtos</a></li>
+                    <li><a href="#treatments">Tratamentos</a></li>
+                    <li><a href="#contact">Contatos</a></li>
                 </ul>
             </nav>
 
@@ -42,7 +43,7 @@
 
     </div>
 
-    <section class="about container">
+    <section id="about" class="about container">
         <div class="about-img">
             <img src="assets/images/woman-applying-cream-looking-into-mirror.jpg" alt="" class="woman-applying">
             <img src="assets/images/natureza-morta-de-produto-para-cuidados-com-pele-na-praia.jpg" alt=""
@@ -61,7 +62,7 @@
         </div>
     </section>
 
-    <section class="services">
+    <section id="services" class="services">
         <div class="container flex-col align-center gap-2">
             <h2>Nossos Serviços</h2>
             <p class="text-services">Na <strong>Emy Beauty</strong>, reunimos tudo para sua beleza e autocuidado em um
@@ -87,7 +88,7 @@
         </div>
     </section>
 
-    <section class="best-sellers">
+    <section id="products" class="best-sellers">
         <div class="container flex-col align-center">
             <h2 class="title-bets">Produtos Mais Vendidos</h2>
             <p>Nossos favoritos que todo mundo ama</p>
@@ -146,7 +147,7 @@
         </div>
     </section>
 
-    <section class="treatments">
+    <section id="treatments" class="treatments">
         <div class="container flex-col align-center">
             <h2 class="title-tratamentos">Tratamentos que oferecemos</h2>
 
@@ -183,7 +184,7 @@
         </div>
     </section>
 
-    <section class="contact">
+    <section id="contact" class="contact">
         <div class="container gap-2 align-center">
             <div class="duvida">
                 <div class="header-duvida">
@@ -191,7 +192,9 @@
                     <h2>Fale Conosco</h2>
                 </div>
                 <div class="text-duvida">
-                    <p>Na <strong>Emy Beauty</strong>, estamos sempre prontas para te atender com carinho e atenção. Se você deseja tirar dúvidas, agendar um horário, saber mais sobre nossos produtos ou tratamentos, é só nos enviar uma mensagem.</p>
+                    <p>Na <strong>Emy Beauty</strong>, estamos sempre prontas para te atender com carinho e atenção. Se
+                        você deseja tirar dúvidas, agendar um horário, saber mais sobre nossos produtos ou tratamentos,
+                        é só nos enviar uma mensagem.</p>
                     <p>Entre em contato e vamos cuidar da sua beleza 💗</p>
                 </div>
 
@@ -219,6 +222,56 @@
             </form>
         </div>
     </section>
+
+    <footer>
+        <div class="container justify-between">
+            <img src="assets/images/logo-white.svg" alt="Logo Emy Beuaty" class="logo-footer">
+
+            <div class="content-footer">
+                <div class="footer-item">
+                    <h3>Empresa</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-chevron-right"></i><a href="#about">Sobre Nós</a></li>
+                        <li><i class="fa-solid fa-chevron-right"></i><a href="#services">Serviços</a></li>
+                        <li><i class="fa-solid fa-chevron-right"></i><a href="#products">Produtos</a></li>
+                        <li><i class="fa-solid fa-chevron-right"></i><a href="#treatments">Tratamentos</a></li>
+                        <li><i class="fa-solid fa-chevron-right"></i><a href="#contact">Contatos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li>Fale Conosco</li>
+                        <li>Agendar Horário</li>
+                        <li><i class="fa-solid fa-phone" style="font-size: 16px;"></i>(00) 0000-0000</li>
+                        <li><i class="fa-brands fa-whatsapp" style="font-size: 20px;"></i>(00) 00000-0000</li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <h3>Endereço</h3>
+                    <ul>
+                        <li>Rua das Rosas, 00</li>
+                        <li>Jardim Aurora, São Paulo - SP, 00000-000</li>
+                    </ul>
+                    <div class="social-media">
+                        <a href="#" title="Whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p class="copyright-content">&copy 2025 Emy Beauty — Desenvolvido por <a
+                    href="https://www.linkedin.com/in/emillymoitinho/" target="_blank">Emilly Moitinho</a></p>
+            <div class="social-media">
+                <a href="https://github.com/emillymoitinho" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/emillymoitinho/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
 
     <script src="assets/js/script.js"></script>
 </body>

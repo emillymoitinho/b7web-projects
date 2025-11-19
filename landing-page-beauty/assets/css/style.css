@@ -350,7 +350,7 @@
     border-radius: 20px;
     gap: 0.5rem;
     padding: 10px 15px;
-    color: var(--off-white);
+    color: var(--off-white) !important;
     background-color: var(--brown);
 }
 
@@ -405,7 +405,106 @@ textarea {
     background-color: var(--brown);
 }
 
+footer {
+    width: 100%;
+    padding: 4rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--warm-brown);
+}
 
+footer .container {
+    gap: 5rem;
+}
+
+.content-footer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.logo-footer {
+    align-self: flex-start;
+    max-width: 300px;
+}
+
+.footer-item {
+    flex: 1;
+    min-width: 145px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-item h3 {
+    color: var(--off-white);
+    margin-bottom: 2rem;
+}
+
+.footer-item ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: var(--off-white);
+}
+
+.footer-item ul li {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 1rem;
+}
+
+.footer-item ul li i {
+    font-size: 14px;
+    color: var(--rose-gold);
+}
+
+.social-media {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    color: var(--off-white);
+    font-size: 24px;
+}
+
+.social-media a {
+    transition: .3s ease-in-out;
+}
+
+.social-media a:hover {
+    color: var(--rose-gold);
+    transform: translateY(-3px);
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 4rem;
+}
+
+.copyright-content {
+    width: 100%;
+    text-align: center;
+    color: var(--off-white);
+}
+
+.copyright-content a {
+    text-decoration: underline;
+    transition: .3s ease-in-out;
+}
+
+.copyright-content a:hover {
+    color: var(--rose-gold);
+}
+
+.copyright .social-media {
+    margin-top: 0;
+}
 
 
 @media (max-width: 768px) {
@@ -568,6 +667,27 @@ textarea {
         max-width: 30rem;
         padding: 40px 20px;
     }
+
+    footer {
+        padding: 4rem 2rem;
+    }
+
+    footer .container {
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .content-footer {
+        gap: 2rem 1rem;
+    }
+
+    .footer-item ul {
+        font-size: 14px;
+    }
+
+    .copyright {
+        flex-direction: column;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -648,6 +768,10 @@ textarea {
 
     .text-duvida {
         width: auto;
+    }
+
+    footer .container {
+        flex-wrap: wrap;
     }
 
 }

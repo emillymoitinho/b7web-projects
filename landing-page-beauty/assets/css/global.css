@@ -20,6 +20,7 @@ h2 {
 }
 
 a {
+    color: inherit;
     text-decoration: none;
 }
 
@@ -77,4 +78,8 @@ button {
 
 .gap-2 {
     gap: 2rem;
+}
+
+.justify-between {
+    justify-content: space-between;
 }
